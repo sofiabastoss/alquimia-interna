@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faebd7;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.125rem;
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 3em 1em;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
+
+h2, h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 0.8;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  margin-bottom: 0.85em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.section-title-small {
+  font-size: 3rem;
+  line-height: 0.7;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+
+}
+
+
+
+.logo {
+   font-family: "Montserrat Alternates", sans-serif;
+   text-align: center;
+}
+
+.logo a{
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  padding: 1em 0 2em;
+}
+
+/*color
+#faebd7 (fondo)
+#af68e0 (violeta)
+#dd35b9 (rosa)
+
+*/
+
+/*navegación*/
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+   justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  padding-top: 1.5em;
+  text-decoration: none;
+  color: #dd35b9; 
+}
+
+nav a:hover 
+nav a:focus {
+color:#ca32a9; 
+text-decoration: underline;
+}
+
+/*botones*/
+
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.btn {
+  padding: .75em 2.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5em 0;
+  border-radius: 0.35em;
+}
+
+.btn-primary {
+  background: #ca32a9;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #ac2b90;
+}
+
+.btn-accent {
+  background: #9155b9;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: #5c3576;
+}
+/*inicio*/
+
+/*hero:*/
+
+.banner {
+background-color: #605f5f;
+background-image: url(./imagenes/banner-inicio.jpg);
+background-blend-mode: multiply;
+background-attachment: fixed;
+background-size: cover;
+color: white;
+text-align: center;
+padding: 15.5vh 1em;
+}
+
+
+/*.about-us {
+  background:#af68e0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  solo
+}*/
+.about-us {
+  background:#9155b9;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0;
+}
+
+.about-us__intro {
+ 
+  padding: 3em 1em 1em;
+}
+
+.about-us__body {
+  padding: 1.5em 1em 3em;
+}
+
+.order-online {
+  background: #f0f0f0;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.product {
+  padding: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1 em rgba(0, 0, 0, 0.1);
+}
+
+.product__content {
+  padding: 1em;
+}
+
+.product__title {
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+}
+
+footer {
+  background-color: #9155b9;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.footercontenido {
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.footercopyright {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/*SECCIÓN TAROTISTA*/
+
+.nombre {
+  padding: 2em;
+}
+
+.tarotista {
+ display: flex;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.video {
+
+    padding: 2em;
+}
+
+/*SECCIÓN TESTIMONIOS*/
+
+.imagen-grid {
+  --gap: 16px;
+  --num-cols: 1;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.imagen-grid > img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+/*SECCIÓN CONTACTO*/
+
+.container {
+  width: 80%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 6px;
+  padding: 4em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacto__contenido, .direccion.detalles,
+.telefono.detalles,
+.email.detalles{
+  padding: 3em;
+}
+
+.mensaje {
+  padding: 3em;
+}
+
+.input-caja {
+  padding: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+ section {
+    padding: 6em 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-us__intro,
+  .about-us__body {
+    flex: 0 1 50%;
+   display: flex;
+    flex-direction: column;
+    padding: 3em 1em;
+    justify-content: center;
+
+  }
+
+  .about-us__intro {
+    text-align: right;
+  }
+
+  .about-us__intro > * {
+    max-width: 27rem;
+    margin-left: auto;
+  }
+
+    .about-us__body {
+    text-align: left;
+  }
+
+  .about-us__body > * {
+    max-width: 27rem;
+    margin-left: auto;
+  }
+
+  .order-online > * {
+    max-width: 55ch;
+    margin-left: auto;  
+    margin-right: auto;
+}
+ 
+.products {
+  flex-direction: row;
+  max-width: 1200px;
+}
+  .imagen-grid {
+  --row-height:400px;
+  --num-cols: 2;
+}
+}
+
+@media (min-width: 1024px) {
+section {
+    padding: 6em 1em;
+  }
+
+  p {
+    font-size: 0.80;
+  }
+
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+  .about-us {
+    flex-direction: row;
+  }
+
+  .about-us__intro,
+  .about-us__body {
+    flex: 0 1 50%;
+   display: flex;
+    flex-direction: column;
+    padding: 3em 1em;
+    justify-content: center;
+
+  }
+
+  .about-us__intro {
+    text-align: right;
+  }
+
+  .about-us__intro > * {
+    max-width: 27rem;
+    margin-left: auto;
+  }
+
+    .about-us__body {
+    text-align: left;
+  }
+
+  .about-us__body > * {
+    max-width: 27rem;
+    margin-left: auto;
+  }
+
+  .order-online > * {
+    max-width: 55ch;
+    margin-left: auto;  
+    margin-right: auto;
+}
+ 
+.products {
+  flex-direction: row;
+  max-width: 1200px;
+}
+
+.imagen-grid {
+  --row-height:500px;
+  --num-cols: 3;
+
+}
+}
+
